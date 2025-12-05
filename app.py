@@ -10,6 +10,15 @@ Cet outil permet de calculer les facteurs d'échelle de projection (Grid Scale F
 vertical (Height Scale Factor) et combiné, à partir de coordonnées WGS84, UTM ou d'un fichier.
 """)
 
+st.sidebar.title("À propos")
+st.sidebar.info("""
+**Développé par :**  
+Ing. AYOUAZ Maamar
+
+**Email :**  
+ayouaz@geosmatic.dz
+""")
+
 tabs = st.tabs(["📍 Point WGS84", "📍 Point UTM", "📂 Import Fichier"])
 
 # --- TAB 1: WGS84 ---
@@ -80,8 +89,8 @@ with tabs[1]:
         is_south = hemisphere == "Sud"
         
     with col_u2:
-        utm_x = st.number_input("Est (X)", value=348163.32)
-        utm_y = st.number_input("Nord (Y)", value=4041824.97)
+        utm_x = st.number_input("Est (X)", value=348163.320, format="%.3f")
+        utm_y = st.number_input("Nord (Y)", value=4041824.970, format="%.3f")
         
     utm_h = st.number_input("Hauteur Ellipsoïdale (h)", value=59.595)
     
