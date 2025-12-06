@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from calc_logic import calculate_factors, dms_to_dd, wgs84_to_utm, calculate_height_scale_factor
 
+__version__ = "0.8.0"
+
 st.set_page_config(page_title="Calculateur Facteur d'Échelle", layout="wide")
 
 st.title("Calculateur de Facteurs d'Échelle")
