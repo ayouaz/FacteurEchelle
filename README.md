@@ -1,4 +1,4 @@
-# Calculateur de Facteurs d'Échelle (TRAE)
+# Calculateur de Facteurs d'Échelle 
 
 Ce projet est une application Python utilisant **Streamlit** pour calculer les facteurs d'échelle (Grid, Height, Combined) à partir de coordonnées WGS84, UTM ou de fichiers par lot.
 
